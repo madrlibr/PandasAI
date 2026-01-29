@@ -15,14 +15,14 @@ An intelligent data assistant that translates Indonesian natural language querie
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/madrlibr/PandasBot.git
+git clone https://github.com/madrlibr/PandasAI.git
 
 ```
 
 
 2. Navigate to the project directory:
 ```bash
-cd PandasBot
+cd PandasAI
 
 ```
 
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 1. Run the Streamlit application:
 ```bash
-streamlit run app/app.py
+streamlit run app.py
 
 ```
 
