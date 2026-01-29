@@ -108,6 +108,7 @@ def change_type(user_input, n, data):
 def fill(data, n, user_input):
     method_list = {"mean": "mean", "median": "median"}
     keyword = ["semua", "seluruh", "semuanya"]
+    
     user_input = user_input.split()
     method = next((val for key, val in method_list.items() if key in user_input), None)
 
