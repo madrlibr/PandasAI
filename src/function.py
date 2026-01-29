@@ -95,7 +95,7 @@ def change_type(user_input, n, data):
         "int": "int",
         "float": "float",
         "string": "string"
-     }
+        }  
     try:
         for key, val in targets.items():
             if key in user_input:
@@ -106,23 +106,24 @@ def change_type(user_input, n, data):
         
 
 def fill(data, n, user_input):
-    method_list = {
-        "mean": "mean",
-        "median": "median"
-    }
+    method_list = {"mean": "mean", "median": "median"}
+    keyword = ["semua", "seluruh", "semuanya"]
+    user_input = user_input.split()
+    method = next((val for key, val in method_list.items() if key in user_input), None)
 
     try:
-        column_name = data.columns[n]
-        column = select_column(data, n)
-        user_input = user_input.split()
+        if any(k in user_input for k in keyword):
+            fill_values = getattr(data, method)(numeric_only=True)
+            data.fillna(fill_values, inplace=True)
+            return data
+        else:
+            column_name = data.columns[n]
+            fill_value = getattr(data[column_name], method)()
+            data[column_name] = data[column_name].fillna(fill_value)
+            return data[column_name]
+            
+    except Exception as e:
+        return f"Terjadi kesalahan: {e}"
 
-        for key, val in method_list.items():
-                if key in user_input:
-                    try:
-                        fill_value = getattr(column, val)()
-                        data[column_name] = data[column_name].fillna(fill_value)
-                        return data[column_name]
-                    except Exception as e:
-                        return f"Error: {e}"
-    except:
-        pass
+
+    

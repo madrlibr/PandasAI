@@ -82,10 +82,11 @@ if uploaded_file or existing_dataset:
             13: fill(df, number, user_input),
             14: delete_row(df, number)
         }
+        
         response = {
             1: "Menampilkan seluruh baris",
             2: "Menampilkan deskripsi dataset",
-            3: "Informasi Dataset: ",
+            3: "INFROMASI Dataset: ",
             4: "Menghapus baris berisi NULL/NaN",
             5: f"Menampilkan {number} baris awal",
             6: f"Menampilkan {number} baris terakhir",
@@ -95,8 +96,8 @@ if uploaded_file or existing_dataset:
             10: f"Total-nilai/sum dari kolom index ke-{number} adalah: ",
             11: f"",
             12: f"",
-            13: f"Mengisi data NULL di kolom index ke-{number}",
-            14: f"Menghapus baris index ke-{number}"
+            13: f"Mengisi data KOSONG: ",
+            14: f"MENGHAPUS baris index ke-{number}"
         }
 
 
