@@ -23,7 +23,7 @@ def ftail(data, n):
     data = data.tail(n)
     return data
 
-def delete_row(data, n):
+def delete_row(data, n):#this function is still not working properly
     try:
         return data.drop(n)
     except:
@@ -41,8 +41,7 @@ def mean_column(data, n):
         mean = round((column).mean(), 2)
         return mean
     except:
-        message = "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
-        return message
+        return "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
 
 def median_column(data, n):
     column = select_column(data, n)
@@ -50,21 +49,28 @@ def median_column(data, n):
         median = round((column).median(), 2)
         return median
     except:
-        message = "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
-        return message
+        return "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
 
 def sum_column(data, n):
     column = select_column(data, n)
     try:
+        
         if column.dtype.kind in 'ifu':
             summ = column.sum()
             return summ
         else:
-            message = "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
-            return message
+            return "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
+        
     except:
-        message = "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
-        return message
+        return "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
+
+def modus_column(data, n):
+    try:
+        column = select_column(data, n)
+        modus = column.mode()
+        return modus
+    except:
+        return "Kesalahan! tidak dapat melakukan operasi modus!"
     
 def check_dtype(data, n):
     try:
@@ -74,8 +80,7 @@ def check_dtype(data, n):
         dtype = (column.dtype)
         return f"Tipe data kolom '{name}' (index {n}) adalah {dtype}"
     except:
-        m = f"Kesalahan! tidak ada kolom dengan index ke-{n}"
-        return m
+        return f"Kesalahan! tidak ada kolom dengan index ke-{n}"
     
 def changer(type, input, n, data):
     input = input.split()
@@ -108,7 +113,6 @@ def change_type(user_input, n, data):
 def fill(data, n, user_input):
     method_list = {"mean": "mean", "median": "median"}
     keyword = ["semua", "seluruh", "semuanya"]
-    
     user_input = user_input.split()
     method = next((val for key, val in method_list.items() if key in user_input), None)
 

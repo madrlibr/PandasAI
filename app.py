@@ -66,7 +66,7 @@ if uploaded_file or existing_dataset:
         number = int(number)
         
 
-        func = {
+        function = {
             1: df,
             2: fdescribe(df),
             3: finfo(df),
@@ -80,28 +80,29 @@ if uploaded_file or existing_dataset:
             11: check_dtype(df, number),
             12: change_type(user_input, number, df),
             13: fill(df, number, user_input),
-            14: delete_row(df, number)
+            14: delete_row(df, number),
+            15: modus_column(df, number)
         }
-        
+
         response = {
             1: "Menampilkan seluruh baris",
-            2: "Menampilkan deskripsi dataset",
-            3: "INFROMASI Dataset: ",
+            2: "Menampilkan deskripsi Dataset",
+            3: "Menampilkan Informasi Dataset: ",
             4: "Menghapus baris berisi NULL/NaN",
             5: f"Menampilkan {number} baris awal",
             6: f"Menampilkan {number} baris terakhir",
-            7: f"Menampilkan kolom dengan index {number}",
+            7: f"Menampilkan kolom dengan index ke-{number}",
             8: f"Nilai rata-rata/mean dari kolom index ke-{number} adalah: ",
             9: f"Nilai tengah/median kolom index ke-{number} adalah: ",
             10: f"Total-nilai/sum dari kolom index ke-{number} adalah: ",
             11: f"",
             12: f"",
-            13: f"Mengisi data KOSONG: ",
-            14: f"MENGHAPUS baris index ke-{number}"
+            13: f"Mengisi data kosong: ",
+            14: f"Menghapus baris index ke-{number}",
+            15: f"Modus dari kolom index ke-{number}"
         }
 
-
-        output_data = func[predict]
+        output_data = function[predict]
         response_text = response[predict]
         
         try:

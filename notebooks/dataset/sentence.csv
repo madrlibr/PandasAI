@@ -1299,6 +1299,56 @@ isi kolom ke 1 yang nan pakai median,13
 isi kolom ke 2 yang nan pakai rata-rata,13
 isi kolom ke 3 yang nan pakai nilai tengah,13
 isi kolom ke 4 yang nan pakai mean,13
+isi semua kolom yang kosong dengan mean,13
+isi data kosong di seluruh kolom pakai median,13
+lengkapi semua kolom nan dengan rata-rata,13
+tutup semua nilai null di setiap kolom menggunakan nilai tengah,13
+isi seluruh dataset yang kosong dengan mean,13
+gunakan mean untuk mengisi nan di semua kolom,13
+pakai median buat isi data kosong seluruh kolom,13
+isi nilai yang hilang di semua kolom dengan rata-rata,13
+handle missing value seluruh kolom pakai median,13
+isi nan di semua kolom dengan mean,13
+rata-rata untuk isi semua kolom yang kosong,13
+masukkan mean ke seluruh kolom yang null,13
+isilah setiap kolom yang kosong dengan median,13
+isi missing data seluruh tabel pakai rata-rata,13
+isi data bolong di semua kolom dengan nilai tengah,13
+pakai mean untuk isi setiap kolom yang kosong,13
+isi nan untuk seluruh kolom dengan median,13
+isi data yang hilang pada semua kolom pakai rata-rata,13
+isi nilai kosong di semua kolom dengan mean,13
+isi nan dari seluruh kolom pakai nilai tengah,13
+pakai rata-rata untuk isi semua kolom yang kosong,13
+bereskan data kosong di semua kolom dengan mean,13
+tutup semua bolong di setiap kolom pakai median,13
+isi seluruh kolom dataset dengan rata-rata,13
+lengkapi semua nilai kosong di tabel pakai nilai tengah,13
+imputasi semua kolom pakai mean,13
+imputasi seluruh kolom pakai median,13
+masukkan rata-rata ke semua kolom yang kosong,13
+isi data kosong seluruh kolom pakai mean,13
+isi setiap kolom yang null dengan median,13
+isi baris kosong di semua kolom dengan rata-rata,13
+isi nan dari seluruh kolom pakai nilai tengah,13
+isi nilai kosong setiap kolom pakai mean,13
+isi data kosong seluruh kolom dengan median,13
+isi nan setiap kolom pakai rata-rata,13
+isi semua kolom yang kosong pakai nilai tengah,13
+bersihkan dan isi semua kolom dengan mean,13
+lengkapi data seluruh kolom dengan median,13
+isi otomatis semua kolom yang nan dengan rata-rata,13
+imputasi semua kolom yang kosong dengan nilai tengah,13
+masukkan nilai mean ke seluruh kolom dataset,13
+otomatis isi nan di semua kolom pakai median,13
+isi setiap baris kosong di semua kolom dengan rata-rata,13
+lengkapi seluruh tabel yang kosong dengan nilai tengah,13
+isi data kosong di tiap kolom dengan mean,13
+isi data kosong di tiap-tiap kolom dengan median,13
+imputasi tiap kolom pakai rata-rata,13
+tutup nan di setiap kolom dengan nilai tengah,13
+isi semua kolom tanpa terkecuali dengan mean,13
+lengkapi seluruh data tabel yang nan pakai median,13
 hapus baris index ke 0,14
 tolong hapus baris 1,14
 buang baris dengan index 0,14
@@ -1399,3 +1449,103 @@ buang baris index 7 saja,14
 buang baris index 8 saja,14
 buang baris index 9 saja,14
 buang baris index 10 saja,14
+apa modus kolom ke 0,15
+tampilkan modus kolom index 1,15
+cari nilai yang paling sering muncul di kolom 2,15
+munculkan modus dari kolom index 0,15
+berapa modus untuk kolom index 3,15
+lihat nilai dominan di kolom index 0,15
+tampilkan modus untuk kolom 1,15
+hitung modus pada kolom index 0,15
+berikan nilai paling sering keluar dari kolom 2,15
+apa modus kolom index 4,15
+nilai yang sering muncul di kolom 0 apa,15
+tampilkan modus dari index kolom 0,15
+hitunglah modus kolom ke 0,15
+output modus untuk kolom index 1,15
+cari modus kolom 0,15
+tampilkan nilai terbanyak variabel index 0,15
+berapa modus untuk index 0,15
+hitung modus data pada kolom 0,15
+nilai modus kolom index 0,15
+tampilkan nilai paling sering muncul dari kolom 1,15
+berapa modus kolom 0,15
+tampilkan modus kolom index 5,15
+hitung modus kolom index 6,15
+hitung nilai modus kolom 7,15
+berapa nilai dominan kolom 8,15
+cari modus kolom index 9,15
+tampilkan modus kolom index 10,15
+berapa nilai yang paling sering muncul di kolom 0,15
+hitung modus kolom 0 saja,15
+tampilkan modus kolom ke-0,15
+nilai terbanyak kolom index 0 adalah,15
+tampilkan modus dari kolom nomor 0,15
+berapa modus kolom nomor 1,15
+tampilkan modus kolom urutan 0,15
+hitung modus kolom urutan 1,15
+berikan modus untuk kolom index 0,15
+tampilkan modus kolom index 11,15
+tampilkan modus kolom index 12,15
+tampilkan modus kolom index 13,15
+tampilkan modus kolom index 14,15
+tampilkan modus kolom index 15,15
+tampilkan modus kolom index 16,15
+tampilkan modus kolom index 17,15
+tampilkan modus kolom index 18,15
+tampilkan modus kolom index 19,15
+tampilkan modus kolom index 20,15
+hitunglah modus kolom 0,15
+hitunglah modus kolom 1,15
+hitunglah modus kolom 2,15
+hitunglah modus kolom 3,15
+hitunglah modus kolom 4,15
+hitunglah modus kolom 5,15
+apa angka yang sering muncul di kolom index 0,15
+tampilkan nilai frekuensi terbanyak kolom 1,15
+cari nilai modus kolom index 2,15
+hitung modus untuk kolom 0,15
+berapa nilai paling sering muncul kolom 3,15
+tampilkan nilai modus kolom 0,15
+tampilkan nilai modus kolom 1,15
+tampilkan nilai modus kolom 2,15
+tampilkan nilai modus kolom 3,15
+tampilkan nilai modus kolom 4,15
+tampilkan nilai modus kolom 5,15
+tampilkan nilai modus kolom 6,15
+tampilkan nilai modus kolom 7,15
+tampilkan nilai modus kolom 8,15
+tampilkan nilai modus kolom 9,15
+tampilkan nilai modus kolom 10,15
+apa modus dari kolom index 0,15
+apa modus dari kolom index 1,15
+apa modus dari kolom index 2,15
+apa modus dari kolom index 3,15
+apa modus dari kolom index 4,15
+apa modus dari kolom index 5,15
+berikan angka modus kolom 0,15
+berikan nilai paling sering muncul kolom 1,15
+berikan modus kolom 2,15
+berikan modus kolom 3,15
+tampilkan nilai modus dari kolom index 0,15
+tampilkan nilai terbanyak dari kolom index 1,15
+tampilkan nilai modus dari kolom index 2,15
+tampilkan nilai modus dari kolom index 3,15
+tampilkan nilai modus dari kolom index 4,15
+tampilkan nilai modus dari kolom index 5,15
+tampilkan nilai modus dari kolom index 6,15
+tampilkan nilai modus dari kolom index 7,15
+tampilkan nilai modus dari kolom index 8,15
+tampilkan nilai modus dari kolom index 9,15
+tampilkan nilai modus dari kolom index 10,15
+hitung modus dataset pada kolom 0,15
+hitung modus dataset pada kolom 1,15
+hitung modus dataset pada kolom 2,15
+hitung modus dataset pada kolom 3,15
+hitung modus dataset pada kolom 4,15
+hitung modus dataset pada kolom 5,15
+tampilkan modus kolom ke 0,15
+tampilkan modus kolom ke 1,15
+tampilkan modus kolom ke 2,15
+tampilkan modus kolom ke 3,15
+tampilkan modus kolom ke 4,15
