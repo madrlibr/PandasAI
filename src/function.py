@@ -1,58 +1,58 @@
 import io
 
-def finfo(data):
+def info(data):
     buffer = io.StringIO()
     data.info(buf=buffer)
     return buffer.getvalue()
             
-def fdescribe(data):
+def describe(data):
     data = data.describe()
     return data
         
-def fhead(data, n):
+def head(data, n):
     data = data.head(n)
     return data
         
-def fdropna(data):
+def dropna(data):
     try:
         return data.dropna()
     except:
         return "Error!"
     
-def ftail(data, n):
+def tail(data, n):
     data = data.tail(n)
     return data
 
-def delete_row(data, n):#this function is still not working properly
+def deleteRow(data, n):#this function is still not working properly
     try:
         return data.drop(n)
     except:
         return "Error!"
     
-def select_column(data, n):
+def selectColumn(data, n):
     try:
         return data.iloc[:, n]
     except:
         pass
 
-def mean_column(data, n):
-    column = select_column(data, n)
+def meanColumn(data, n):
+    column = selectColumn(data, n)
     try:
         mean = round((column).mean(), 2)
         return mean
     except:
         return "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
 
-def median_column(data, n):
-    column = select_column(data, n)
+def medianColumn(data, n):
+    column = selectColumn(data, n)
     try:
         median = round((column).median(), 2)
         return median
     except:
         return "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
 
-def sum_column(data, n):
-    column = select_column(data, n)
+def sumColumn(data, n):
+    column = selectColumn(data, n)
     try:
         
         if column.dtype.kind in 'ifu':
@@ -64,19 +64,19 @@ def sum_column(data, n):
     except:
         return "Kesalahan! tidak dapat melakukan operasi, pastikan kolom ada dan tipe data kolom adalah integer atau float"
 
-def modus_column(data, n):
+def modusColumn(data, n):
     try:
-        column = select_column(data, n)
+        column = selectColumn(data, n)
         modus = column.mode()
         return modus
     except:
         return "Kesalahan! tidak dapat melakukan operasi modus!"
     
-def check_dtype(data, n):
+def checkDtype(data, n):
     try:
         column_name = data.columns[n]
         name = column_name
-        column = select_column(data, n)
+        column = selectColumn(data, n)
         dtype = (column.dtype)
         return f"Tipe data kolom '{name}' (index {n}) adalah {dtype}"
     except:
@@ -95,7 +95,7 @@ def changer(type, input, n, data):
         except Exception as e:
             return f"Terjadi kesalahan: {e}"
 
-def change_type(user_input, n, data):
+def changeType(user_input, n, data):
     targets = {
         "int": "int",
         "float": "float",
@@ -110,7 +110,7 @@ def change_type(user_input, n, data):
         return f"Terjadi kesalahan!"
         
 
-def fill(data, n, user_input):
+def fillna(data, n, user_input):
     method_list = {"mean": "mean", "median": "median"}
     keyword = ["semua", "seluruh", "semuanya"]
     user_input = user_input.split()

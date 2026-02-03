@@ -60,28 +60,28 @@ if uploaded_file or existing_dataset:
         response_text = ""
         output_data = None
         user_input = prompt.lower()
-        pro = processor(user_input=user_input, model=model, number=0)
-        predict, number = pro.process()
+        processInput = processor(user_input=user_input, model=model, number=0)
+        predict, number = processInput.process()
         predict = int(predict)
         number = int(number)
         
 
         function = {
             1: df,
-            2: fdescribe(df),
-            3: finfo(df),
-            4: fdropna(df),
-            5: fhead(df, number),  
-            6: ftail(df, number),
-            7: select_column(df, number),
-            8: mean_column(df, number),
-            9: median_column(df, number),
-            10: sum_column(df, number),
-            11: check_dtype(df, number),
-            12: change_type(user_input, number, df),
-            13: fill(df, number, user_input),
-            14: delete_row(df, number),
-            15: modus_column(df, number)
+            2: describe(df),
+            3: info(df),
+            4: dropna(df),
+            5: head(df, number),  
+            6: tail(df, number),
+            7: selectColumn(df, number),
+            8: meanColumn(df, number),
+            9: medianColumn(df, number),
+            10: sumColumn(df, number),
+            11: checkDtype(df, number),
+            12: changeType(user_input, number, df), 
+            13: fillna(df, number, user_input),
+            14: deleteRow(df, number),
+            15: modusColumn(df, number)
         }
 
         response = {
