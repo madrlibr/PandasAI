@@ -16,8 +16,6 @@ The system uses hardcoded rules and does not utilize Natural Language Processing
 Commands must contain specific keywords to trigger the corresponding Pandas functions.
 Supports CSV files only.
 
-## Note
-The project is still under early development.
 
 ## LICENSE
 This project is licensed under the MIT LICENSE.
