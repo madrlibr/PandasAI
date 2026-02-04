@@ -48,7 +48,8 @@ streamlit run app.py
 * "tampilkan seluruh data" (show all data)
 * "Hapus baris dengan nilai NaN" (delete row with NaN value)
 * "deskripsi data" (get statistical description)
-
+* "Ubah tipe data kolom ke 1 menjadi int" (change data type of a column)
+* "Isi data kosong di semua kolom dengan mean" (fill every missing values with mean)
 
 ## Versions
 This repository contains two versions of the chatbot:
