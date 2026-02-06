@@ -12,10 +12,10 @@ if "df_data" not in st.session_state:
     st.session_state.df_data = None
 
 st.title("Pandas AI")
-st.caption("Manage and manipulate your dataset in narutal language (indonesian only)")
+st.caption("Analisa dan manipulasi datasetmu dengan bahasa Indonesia")
 
 uploaded_file = st.sidebar.file_uploader("Upload file CSV", type=["csv"])
-existing_dataset = st.pills("Dataset yang tersedia", ["dummy/StudentPerformance.csv"] )
+existing_dataset = st.pills("Dataset yang tersedia", ["StudentPerformance.csv"] )
 
 if uploaded_file or existing_dataset:   
     if st.session_state.df_data is None:
@@ -60,7 +60,7 @@ if uploaded_file or existing_dataset:
         response_text = ""
         output_data = None
         user_input = prompt.lower()
-        processInput = processor(user_input=user_input, model=model, number=0)
+        processInput = processor(userInput=user_input, model=model, number=0)
         predict, number = processInput.process()
         predict = int(predict)
         number = int(number)
@@ -87,19 +87,19 @@ if uploaded_file or existing_dataset:
         response = {
             1: "Menampilkan seluruh baris",
             2: "Menampilkan deskripsi Dataset",
-            3: "Menampilkan Informasi Dataset: ",
-            4: "Menghapus baris berisi NULL/NaN",
+            3: "Menampilkan informasi Dataset: ",
+            4: "Menghapus baris berisi data NULL/NaN",
             5: f"Menampilkan {number} baris awal",
             6: f"Menampilkan {number} baris terakhir",
             7: f"Menampilkan kolom dengan index ke-{number}",
-            8: f"Nilai rata-rata/mean dari kolom index ke-{number} adalah: ",
-            9: f"Nilai tengah/median kolom index ke-{number} adalah: ",
-            10: f"Total-nilai/sum dari kolom index ke-{number} adalah: ",
+            8: f"Nilai rata-rata/mean dari kolom index ke-{number} adalah",
+            9: f"Nilai tengah/median kolom index ke-{number} adalah",
+            10: f"Total-nilai/sum dari kolom index ke-{number} adalah",
             11: f"",
             12: f"",
-            13: f"Mengisi data kosong: ",
+            13: f"Mengisi data kosong",
             14: f"Menghapus baris index ke-{number}",
-            15: f"Modus dari kolom index ke-{number}"
+            15: f"Modus dari kolom index ke-{number} adalah"
         }
 
         output_data = function[predict]
