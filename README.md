@@ -11,6 +11,7 @@ An intelligent data assistant that translates Indonesian natural language querie
 ## Footage
 <img width="1555" height="1009" alt="Screenshot (1182)" src="https://github.com/user-attachments/assets/2bf87720-ed09-45f9-ab76-e86ed7438b76" />
 
+
 ## Installation
 
 1. Clone this repository:
